@@ -3,12 +3,12 @@ names[0]="Yaakov";
 names[1]="John";
 names[2]="Jen";
 names[3]="jason";
-names[4]="paul";
-names[5]="frank";
-names[6]="larry";
-names[7]="paula";
-names[8]="laura";
-names[9]="jim";
+names[4]="Jacob";
+names[5]="Frank";
+names[6]="Larry";
+names[7]="Paaula";
+names[8]="Killer";
+names[9]="Jimmy";
 
 
 for (var i = 0; i < names.length; i++) {
