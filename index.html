@@ -12,9 +12,9 @@
             padding: 0;
         }
 
-        h1 {
+        h1, h2 {
             color: #8a2be2; /* Violet color for headings */
-            text-align: left;
+            text-align: center; /* Center align headings */
             padding: 20px 0;
         }
 
@@ -57,12 +57,6 @@
         }
 
         /* Job listings styling */
-        h2 {
-            margin-top: 20px;
-            color: #8a2be2; /* Violet color for headings */
-            text-align: left;
-        }
-
         ul {
             list-style: none;
             padding: 0;
@@ -90,11 +84,21 @@
             border-radius: 5px;
             box-shadow: 0px 0px 10px #bdc3c7;
         }
+
+        @media only screen and (max-width: 600px) {
+            form, ul {
+                max-width: 90%;
+            }
+
+            h1, h2 {
+                font-size: 1.5em;
+            }
+        }
     </style>
 </head>
 <body>
-    <pre><h1>                                    Welcome to Campus Recruitment System</h1></pre>
-    <form id="applicationForm"  method="post" onsubmit="submitApplication()">
+    <h1>Welcome to Campus Recruitment System</h1>
+    <form id="applicationForm" method="post" onsubmit="submitApplication()">
         <label for="student_name">Student Name:</label>
         <input type="text" id="student_name" name="student_name" required><br>
 
@@ -113,7 +117,7 @@
         <input type="submit" value="Apply">
     </form>
 
-    <pre><h2>                                                                   Job Listings</h2></pre>
+    <h2>Job Listings</h2>
     <ul>
         <li>Manager - Deepmalya Acharya</li>
         <li>Human Resource - Niladri Dutta</li>
